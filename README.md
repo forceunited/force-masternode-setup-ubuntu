@@ -5,8 +5,8 @@ On your local computer:
 Help > Debug Console > type ``masternode genkey``
 
 On VPS:
-``wget https://raw.githubusercontent.com/LIMXTEC/BTDX-Masternode-Setup-Ubuntu-1404/master/btdxsetup.sh
+``wget https://raw.githubusercontent.com/forceunited/force-masternode-setup-ubuntu-14.04/master/forcesetup.sh``
 
-chmod +x btdxsetup.sh
+``chmod +x forcesetup.sh``
 
-./btdxsetup.sh``
+``./forcesetup.sh``
