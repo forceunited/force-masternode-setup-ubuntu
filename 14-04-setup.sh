@@ -34,10 +34,10 @@ echo -n "Please Enter a STRONG Password or copy & paste the password generated f
 read usrpas
 echo -n "Please Enter your masternode genkey respond and Hit [ENTER]: "
 read mngenkey
-echo -n "Please Enter the IP address of your VPS and Hit [ENTER]: "
+echo -n "Please Enter the IP address and port of your VPS (ex: xx.xx.xx.xx:37245) and Hit [ENTER]: "
 read ipaddress
 
-echo -e "rpcuser=forcemasternode1245523 \nrpcpassword=$usrpas \nrpcallowip=127.0.0.1 \nlisten=1 \nserver=1 \ndaemon=1 \nstaking=0 \nmasternodeaddr=$ipaddress:37245 \nmasternode=1 \nmasternodeprivkey=$mngenkey \n" > ~/.Force/Force.conf
+echo -e "rpcuser=forcemasternode1245523 \nrpcpassword=$usrpas \nrpcallowip=127.0.0.1 \nlisten=1 \nserver=1 \ndaemon=1 \nstaking=0 \nmasternodeaddr=$ipaddress \nmasternode=1 \nmasternodeprivkey=$mngenkey \n" > ~/.Force/Force.conf
 
 echo '*** Done 2/3 ***'
 sleep 2
