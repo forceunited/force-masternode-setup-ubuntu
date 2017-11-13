@@ -37,7 +37,7 @@ read mngenkey
 echo -n "Please Enter the IP address of your VPS and Hit [ENTER]: "
 read ipaddress
 
-echo -e "rpcuser=forcemasternode1245523 \nrpcpassword=$usrpas \nrpcallowip=127.0.0.1 \nlisten=1 \nserver=1 \ndaemon=1 \nstaking=0 \nmasternodeaddr=$ipaddress:37245 \nmasternode=1 \nmasternodeprivkey=$mngenkey \n" > ~/.force/force.conf
+echo -e "rpcuser=forcemasternode1245523 \nrpcpassword=$usrpas \nrpcallowip=127.0.0.1 \nlisten=1 \nserver=1 \ndaemon=1 \nstaking=0 \nmasternodeaddr=$ipaddress:37245 \nmasternode=1 \nmasternodeprivkey=$mngenkey \n" > ~/.Force/force.conf
 
 echo '*** Done 2/3 ***'
 sleep 2
