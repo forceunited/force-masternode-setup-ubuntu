@@ -19,14 +19,13 @@ rm force-3.4.0.0-ubuntu-14.04.tar.xz
 mkdir force
 mv Forced force/Forced
 cd force
-strip Forced
 sleep 1
 echo '*** Done 1/3 ***'
 sleep 1
 echo '*** Step 2/3 ***'
 echo '*** Starting & configuring the wallet ***'
 sleep 2
-Forced -daemon
+./Forced -daemon
 sleep 3
 echo -n "Please Enter a STRONG Password or copy & paste the password generated for you above and Hit [ENTER]: "
 read usrpas
@@ -42,9 +41,9 @@ sleep 2
 echo '*** Step 3/3 ***'
 echo '*** Last Server Start also Wallet Sync ***'
 echo 'After 1 minute you will see the 'getinfo' output from the RPC Server...'
-Forced -daemon
+./Forced -daemon
 sleep 60
-Forced getinfo
+./Forced getinfo
 sleep 2
 echo 'Have fun with your Masternode !'
 sleep 2
