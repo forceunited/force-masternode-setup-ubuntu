@@ -16,8 +16,7 @@ sleep 1
 wget https://github.com/forceunited/force/releases/download/v3.4.0.0/force-3.4.0.0-ubuntu-14.04.tar.xz
 tar xvfJ force-3.4.0.0-ubuntu-14.04.tar.xz
 rm force-3.4.0.0-ubuntu-14.04.tar.xz
-mkdir force
-mv force-3.4.0.0-ubuntu-14.04 force
+mv Forced force
 cd force
 strip Forced
 sleep 1
