@@ -15,7 +15,7 @@ echo '*** Copying Force wallet ***'
 sleep 2
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
-sudo apt-get install libtool libssl-dev -y
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils software-properties-common -y
 sudo apt-get install libboost-all-dev libminiupnpc-dev -y
 sudo apt-get install software-properties-common -y
 sudo apt-get install libevent-dev -y
