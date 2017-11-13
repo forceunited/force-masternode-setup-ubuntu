@@ -12,8 +12,16 @@ echo '**************************************************************************
 sleep 3
 echo '*** Step 1/3 ***'
 echo '*** Copying Force wallet ***'
-sleep 1
-sudo apt-get install libboost-all-dev -y
+sleep 2
+sudo apt-get update -y
+sudo apt-get dist-upgrade -y
+sudo apt-get install libtool libssl-dev -y
+sudo apt-get install libboost-all-dev libminiupnpc-dev -y
+sudo apt-get install software-properties-common -y
+sudo apt-get install libevent-dev -y
+add-apt-repository ppa:bitcoin/bitcoin
+apt-get update -y
+apt-get install libdb4.8-dev libdb4.8++-dev -y
 wget https://github.com/forceunited/force/releases/download/v3.4.0.0/force-3.4.0.0-ubuntu-14.04.tar.xz
 tar xvfJ force-3.4.0.0-ubuntu-14.04.tar.xz
 rm force-3.4.0.0-ubuntu-14.04.tar.xz
