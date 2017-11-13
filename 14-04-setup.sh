@@ -15,13 +15,7 @@ echo '*** Copying Force wallet ***'
 sleep 2
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
-sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils software-properties-common -y
-sudo apt-get install libboost-all-dev libminiupnpc-dev -y
-sudo apt-get install software-properties-common -y
-sudo apt-get install libevent-dev -y
-add-apt-repository ppa:bitcoin/bitcoin
-apt-get update -y
-apt-get install libdb4.8-dev libdb4.8++-dev -y
+sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool
 wget https://github.com/forceunited/force/releases/download/v3.4.0.0/force-3.4.0.0-ubuntu-14.04.tar.xz
 tar xvfJ force-3.4.0.0-ubuntu-14.04.tar.xz
 rm force-3.4.0.0-ubuntu-14.04.tar.xz
