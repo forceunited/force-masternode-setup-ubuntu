@@ -11,7 +11,7 @@ echo 'Clone & Compile the FOR Wallet also help you on first setup and sync'
 echo '****************************************************************************'
 sleep 3
 echo '*** Step 1/3 ***'
-echo '*** Copying Force wallet ***'
+echo '*** Installing packages & copying Force wallet ***'
 sleep 2
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
