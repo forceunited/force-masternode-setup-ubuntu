@@ -11,8 +11,9 @@ echo 'Clone & Compile the FOR Wallet also help you on first setup and sync'
 echo '****************************************************************************'
 sleep 3
 echo '*** Step 1/3 ***'
-echo '*** Copy Force wallet ***'
+echo '*** Copying Force wallet ***'
 sleep 1
+sudo apt-get install libboost-all-dev -y
 wget https://github.com/forceunited/force/releases/download/v3.4.0.0/force-3.4.0.0-ubuntu-14.04.tar.xz
 tar xvfJ force-3.4.0.0-ubuntu-14.04.tar.xz
 rm force-3.4.0.0-ubuntu-14.04.tar.xz
