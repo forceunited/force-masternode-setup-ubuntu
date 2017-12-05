@@ -15,10 +15,12 @@ echo '*** Installing packages & copying Force wallet ***'
 sleep 2
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
-sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool
-wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu.tar.zf
-tar xvf force-3.6.0.0-ubuntu.tar.zf
-rm force-3.6.0.0-ubuntu.tar.zf
+sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool unzip
+wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu_allversions_by_franco21.zip
+unzip force-3.6.0.0-ubuntu_allversions_by_franco21.zip
+unzip force-3.6.0.0-ubuntu16.04-qt-d.zip
+tar xvf force-3.6.0.0-ubuntu16.04.tar.gz
+rm -rf {force*,Adds*}
 chmod 755 Forced
 mkdir force
 mv Forced force/Forced
