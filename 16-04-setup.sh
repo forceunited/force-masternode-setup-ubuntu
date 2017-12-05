@@ -6,7 +6,7 @@
 
 clear
 echo "*********** Welcome to the Force (FOR) Masternode Setup Script ***********"
-echo 'This script will install all required updates & package for Ubuntu 14.04 !'
+echo 'This script will install all required updates & package for Ubuntu 16.04 !'
 echo 'Clone & Compile the FOR Wallet also help you on first setup and sync'
 echo '****************************************************************************'
 sleep 3
