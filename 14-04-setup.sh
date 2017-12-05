@@ -16,9 +16,9 @@ sleep 2
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
 sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool
-wget https://github.com/forceunited/force/releases/download/v3.4.0.0/force-3.4.0.0-ubuntu-14.04.tar.xz
-tar xvfJ force-3.4.0.0-ubuntu-14.04.tar.xz
-rm force-3.4.0.0-ubuntu-14.04.tar.xz
+wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu.tar.zf
+tar xvfJ force-3.6.0.0-ubuntu.tar.xz
+rm force-3.6.0.0-ubuntu.tar.xz
 mkdir force
 mv Forced force/Forced
 cd force
