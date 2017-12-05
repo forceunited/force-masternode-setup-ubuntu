@@ -19,6 +19,7 @@ sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev lib
 wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu.tar.zf
 tar xvfJ force-3.6.0.0-ubuntu.tar.zf
 rm force-3.6.0.0-ubuntu.tar.zf
+chmod 755 Forced
 mkdir force
 mv Forced force/Forced
 cd force
