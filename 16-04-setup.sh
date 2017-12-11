@@ -16,7 +16,7 @@ sleep 2
 sudo add-apt-repository ppa:bitcoin/bitcoin -y
 sudo apt-get update -y
 sudo apt-get dist-upgrade -y
-sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libdb4.8-dev libdb4.8++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool
+sudo apt-get -y update && sudo apt-get -y install build-essential && sudo apt-get -y install libssl-dev && sudo apt-get -y install libdb++-dev  && sudo apt-get -y install libdb4.8-dev && sudo apt-get -y install libdb4.8++-dev && sudo apt-get -y install libboost-all-dev && sudo apt-get -y install libcrypto++-dev && sudo apt-get -y install libqrencode-dev && sudo apt-get -y install libminiupnpc-dev  && sudo apt-get -y install libgmp-dev && sudo apt-get -y install libgmp3-dev && sudo apt-get -y install autoconf && sudo apt-get -y install autogen && sudo apt-get -y install automake && sudo apt-get -y install libtool && sudo apt-get -y install libboost-program-options-dev && sudo apt-get -y install libbost-system-dev && sudo apt-get -y install libbost-thread-dev
 wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu.tar.zf
 tar xvf force-3.6.0.0-ubuntu.tar.zf
 rm force-3.6.0.0-ubuntu.tar.zf
