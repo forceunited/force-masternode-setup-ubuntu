@@ -14,11 +14,14 @@ echo '*** Step 1/3 ***'
 echo '*** Installing packages & copying Force wallet ***'
 sleep 2
 sudo apt-get update -y
-sudo apt-get dist-upgrade -y
-sudo apt-get -y update && sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev libgmp3-dev autoconf autogen automake libtool
-wget https://github.com/forceunited/force/releases/download/v3.6.0.0/force-3.6.0.0-ubuntu.tar.zf
-tar xvfJ force-3.6.0.0-ubuntu.tar.zf
-rm force-3.6.0.0-ubuntu.tar.zf
+sudo apt-get upgrade -y
+sudo apt-get install software-properties-common -y
+sudo add-apt-repository ppa:bitcoin/bitcoin -y
+sudo apt-get -y update
+sudo apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev libgmp-dev autoconf autogen automake libtool libgmp3-dev
+wget https://github.com/forceunited/force/releases/download/v3.7.0.0/force-3.7.0-0-ubuntu-14.04-d.tar.gz
+tar xvfz force-3.7.0-0-ubuntu-14.04-d.tar.gz
+rm force-3.7.0-0-ubuntu-14.04-d.tar.gz
 chmod 755 Forced
 mkdir force
 mv Forced force/Forced
@@ -49,6 +52,6 @@ echo 'After 1 minute you will see the 'getinfo' output from the RPC Server...'
 sleep 60
 ./Forced getinfo
 sleep 2
-echo 'Have fun with your Masternode!'
+echo 'Have fun with your Force Supernode!'
 sleep 2
-echo '*** Done 3/3 ***'
+echo '*** Done 3/3 ***
