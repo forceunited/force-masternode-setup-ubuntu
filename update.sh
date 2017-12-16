@@ -13,6 +13,7 @@ echo '*** Step 1/3 ***'
 echo '*** Remove previous Force wallet ***'
 sleep 2
 cd force
+./Forced stop
 rm -rf Forced
 sleep 1
 echo '*** Done 1/3 ***'
