@@ -1,12 +1,10 @@
-# Force masternode setup on ubuntu
+#Force masternode-setup
 
-This script will help you to setup a remote Force Masternode on ubuntu 14.04 and needs the IP address of the server and a masternode genkey output from your local wallet. 
+https://github.com/forceunited/force-masternode-setup-ubuntu/wiki#how-to-set-up-a-force-supernode-masternode
 
-**On your local computer:**
+#Setup scripts
 
-Help > Debug Console > type ``masternode genkey``
-
-**On a 14.04 VPS:**
+**On a Ubuntu 14.04 VPS:**
 
 ``wget https://raw.githubusercontent.com/forceunited/force-masternode-setup-ubuntu/master/14-04-setup.sh``
 
@@ -14,7 +12,7 @@ Help > Debug Console > type ``masternode genkey``
 
 ``./14-04-setup.sh``
 
-**On a 16.04 VPS:**
+**On a Ubuntu 16.04 VPS:**
 
 ``wget https://raw.githubusercontent.com/forceunited/force-masternode-setup-ubuntu/master/16-04-setup.sh``
 
