@@ -1,4 +1,4 @@
-# Force masternode-setup
+# Force-masternode-setup
 
 https://github.com/forceunited/force-masternode-setup-ubuntu/wiki#how-to-set-up-a-force-supernode-masternode
 
