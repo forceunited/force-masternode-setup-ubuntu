@@ -62,4 +62,4 @@ sleep 60
 sleep 2
 echo 'Have fun with your Force Supernode!'
 sleep 2
-echo '*** Done 3/3 ***'
+echo '*** Done 4/4 ***'
