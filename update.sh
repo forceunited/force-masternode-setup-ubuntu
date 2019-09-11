@@ -21,20 +21,21 @@ sleep 1
 echo '*** Step 2/3 ***'
 echo '*** Installing the latest wallet ***'
 sleep 2
-wget https://github.com/forceunited/force/releases/download/v3.7.0.0/force-3.7.0-0-ubuntu-16.04-d.tar.gz
-tar xvzf force-3.7.0-0-ubuntu-16.04-d.tar.gz
-rm force-3.7.0-0-ubuntu-16.04-d.tar.gz
-chmod 755 Forced
+wget https://github.com/forceunited/force/releases/download/3.7.1.0/force-3.7.1.0-ubuntu-16.04-d.tar.gz
+tar xvzf force-3.7.1.0-ubuntu-16.04-d.tar.gz
+rm force-3.7.1.0-ubuntu-16.04-d.tar.gz
+chmod 755 forced
+mv forced /usr/local/bin
 sleep 1
 echo '*** Done 2/3 ***'
 sleep 2
 echo '*** Step 3/3 ***'
 echo '*** Last Server Start also Wallet Sync ***'
 echo 'After 1 minute you will see the 'getinfo' output from the RPC Server...'
-./Forced -daemon
+forced -daemon
 sleep 60
-./Forced getinfo
+forced getinfo
 sleep 2
-echo 'Have fun with your Force Supernode!'
+echo 'Have fun with your Force Masternode!'
 sleep 2
 echo '*** Done 3/3 ***'
